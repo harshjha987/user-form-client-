@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const FormDataSchema = new mongoose.Schema({
     promoCode:{
-        type: Number, 
+        type: String, 
         required : true
     },
     hearAboutUs: {type : String , required : true},
@@ -24,13 +24,13 @@ const FormDataSchema = new mongoose.Schema({
     photoCredit: {type : String,},
     instaLink: {
         type: String,
-        unique : true,
-        sparse: true
+       
+       
     },
     facebookLink: {
         type : String,
-        unique : true,
-        sparse: true
+       
+       
        
         
     },
